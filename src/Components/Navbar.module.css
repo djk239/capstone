@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Markazi Text';
+    src: url('../data/icons_assets/markazi.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Karla';
+    src: url('../data/icons_assets/Karla-VariableFont_wght.ttf') format('truetype');
+  }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding-right: 18%;
+    padding-left: 15%;
+    font-family: 'Karla';
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.listcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 8%;
+    margin-left: 10%;
+    list-style: none;
+    font-size: large;
+    font-weight: 800;
+}
+
+.listcontainer .li{
+    list-style: none;
+}
