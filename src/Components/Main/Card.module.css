@@ -1,0 +1,45 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex-start;
+    background-color: var(--light-color);
+    border-radius: 10px 10px 0 0;
+    max-width: 250px;
+    min-height: 500px;
+    padding: 8%;
+}
+
+.image{
+    align-self: center;
+    margin-top: -10%;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.line1{
+    display: flex;
+}
+
+.title{
+    font-family: var(---main-font);
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.price{
+    font-family: var(---main-font);
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.description{
+    font-family: var(--secondary-font);
+    color: var(--dark-color);
+    font-size: 16px;
+    line-height: 1.5;
+}

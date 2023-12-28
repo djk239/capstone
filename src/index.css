@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('/src/data/icons_assets/markazi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('/src/data/icons_assets/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +21,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --primary-color: #F4CE14;
+  --primary2-color: #495E57;
+  --secondary-color: #EE9972;
+  --secondary2-color: #FBDABB;
+  --light-color: #EDEFEE;
+  --dark-color: #333333;
+  --main-font: 'Markazi Text';
+  --secondary-font: 'Karla';
+}
+
