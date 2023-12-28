@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css"
-import image from '../data/icons_assets/restaurant chef B.jpg'
+import image from '../../data/icons_assets/restaurant chef B.jpg'
 
 
 function Footer (){
