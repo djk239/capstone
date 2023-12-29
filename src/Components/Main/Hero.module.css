@@ -38,7 +38,8 @@
 }
 
 .image{
-    width: 25%;
+    display: inline;
+    min-width: 375px;
     height: 375px;
     border-radius: 10px;
     position: relative;
@@ -58,8 +59,41 @@
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
-    width: 30%;
+    min-width: 30%;
+    max-width: 40%;
     margin-bottom: 2%;
+    display: inline-block;
+    text-align: center;
 }
+
+@media (max-width: 1050px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .image {
+        align-self: center;
+        margin-left: 25%;
+        max-width: 75%; 
+    }
+
+    .title, .subtitle, .description{
+        margin-left: 8%;
+    }
+
+    .button{
+        max-width: 80%;
+        align-self: center;
+        padding: auto;
+    }
+}
+
 
 
