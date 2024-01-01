@@ -32,6 +32,7 @@
 }
 a{
     text-decoration: none;
+    color: var(--dark-color);
 }
 a:visited{
     color: var(--dark-color);
@@ -44,6 +45,10 @@ a:hover{
 a:active{
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+.menucontainer{
+    visibility: hidden;
 }
 
 @media (max-width: 1050px) {
@@ -62,6 +67,31 @@ a:active{
     .listcontainer{
         display: none;
     }
+
+    .menucontainer{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        visibility: visible;
+        border-radius: 2%;
+        background-color: var(--light-color);
+        padding: 2%;
+        left: 65vw;
+        margin-top: 80px;
+        z-index: 1000;
+    }
+
+    .menuList{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: 8px;
+        list-style: none;
+        font-size: large;
+        font-weight: 800;
+
+    }
+
 /* Experiment using focus-within, while interesting JS is going to be used for menu
     .listcontainer {
         position: absolute;
@@ -91,4 +121,11 @@ a:active{
     height: 100%;
   }
 */
+}
+
+@media (max-width: 520px) {
+
+    .menucontainer{
+        left: 55vw;
+    }
 }

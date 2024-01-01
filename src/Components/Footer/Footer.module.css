@@ -1,14 +1,16 @@
 
 .container{
     display: flex;
-    margin-left: 15%;
     gap: 50px;
+    padding: 2%;
+    background-color: var(--dark-color);
 }
 
 .image{
 
     height: 250px;
     width: 250px;
+    border-radius: 5px;
     overflow: hidden;
     object-fit: cover;
     object-position: 0% 0%;
@@ -16,10 +18,42 @@
 
 .list{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .list h3{
     font-size: 18px;
     font-weight: bold;
+    color: var(--secondary-color);
 }
 
+.list a{
+    text-decoration: none;
+    color: var(--secondary2-color);
+    cursor: pointer;
+}
+.list a:visited{
+    color: var(--secondary2-color);
+    text-decoration: none;
+}
+.list a:hover{
+    color: var(--secondary2-color);
+    text-decoration: underline;
+}
+.list a:active{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+    .image{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

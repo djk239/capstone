@@ -1,10 +1,10 @@
 import styles from "./Header.module.css"
 import Navbar from '../Navbar/Navbar';
 
-function Header(){
+function Header({onPageChange}){
     return (
         <header className={styles.header}>
-            <Navbar className={styles.navbar }/>
+            <Navbar onPageChange={onPageChange} className={styles.navbar }/>
 
             
         </header>

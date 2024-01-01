@@ -7,25 +7,25 @@ function Footer (){
         <div className={styles.container}>
             <img className={styles.image} src={image} alt="compnay logo display here"/>
             <ul className={styles.list}>
-                <h3 className={styles.listheader}>Doormat Navigation</h3>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Order Online</li>
-                <li>Login</li>
+                <h3 className={styles.listheader}>Navigation</h3>
+                <a>Home</a>
+                <a>About</a>
+                <a>Menu</a>
+                <a>Reservations</a>
+                <a>Order Online</a>
+                <a>Login</a>
             </ul>
             <ul className={styles.list}>
                 <h3 className={styles.listheader}>Contact</h3>
-                <li>Address</li>
-                <li>phone number</li>
-                <li>Email</li>
+                <a>Address</a>
+                <a>+1(800)-888-8888</a>
+                <a>contact@littlelemon.com</a>
             </ul>
             <ul className={styles.list}>
-                <h3 className={styles.listheader}>Social Media Links</h3>
-                <li>Address</li>
-                <li>phone number</li>
-                <li>Email</li>
+                <h3 className={styles.listheader}>Social Media</h3>
+                <a>Facebook</a>
+                <a>Instagram</a>
+                <a>X</a>
             </ul>
         </div>
     )
