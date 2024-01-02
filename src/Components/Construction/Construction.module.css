@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.image{
+    filter: brightness(80%) contrast(80%);
+    opacity: 0.8;
+    height: 100px;
+    width: 100px;
+    margin-top: 10%;
+    align-self: center;
+}
+
+.text{
+    color: var(--dark-color);
+    font-weight: 400;
+}

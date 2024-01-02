@@ -1,4 +1,5 @@
 import styles from "./Card.module.css"
+import image from "../../data/icons_assets/delivery.png"
 
 const Card = ({ key, imagesrc, title, price, description, link }) => {
     return(
@@ -9,7 +10,10 @@ const Card = ({ key, imagesrc, title, price, description, link }) => {
                 <h2 className={styles.price}>{price}</h2>
             </div>
             <p className={styles.description}>{description}</p>
-            <a className={styles.link} href={link}>Order a delivery</a>
+            <a className={styles.link} href={link}>
+                Order a delivery      
+                <img className={styles.delivery} src={image} alt="delivery"/> 
+            </a>
 
         </div>
     )

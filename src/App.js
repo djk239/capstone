@@ -3,6 +3,8 @@ import styles from './App.module.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
+import Construction from './Components/Construction/Construction';
+import Reservation from './Components/Reservation/Reservation';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
 
       <Header onPageChange={handlePageChange} />
       {(page === 'home' && <Main />)}
+      {(page === 'reservations' && <Reservation />)}
+      {(page !== 'home' && page !== 'reservations' && <Construction />)}
       <Footer />
       
     </div>
